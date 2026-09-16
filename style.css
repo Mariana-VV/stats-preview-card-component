@@ -1,0 +1,131 @@
+:root {
+  --white: #fff;
+  --navy-950: #0a0c1c;
+  --blue-950: #1b1937;
+  --purple-500: #ab5cdb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--white);
+  background-color: var(--navy-950);
+  font-weight: 700;
+}
+
+.block {
+  display: grid;
+  height: 100%;
+  max-width: 20.4rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% auto;
+}
+
+.box:first-child {
+  height: 30vh;
+
+  background-image:
+    linear-gradient(#b758f2aa), url("images/image-header-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box:last-child {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--blue-950);
+}
+
+.title {
+  font-size: 1.75rem;
+}
+.heightlight {
+  color: var(--purple-500);
+}
+
+.description {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.digit {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.text {
+  font-size: 0.75rem;
+  line-height: 2;
+  font-family: "Lexend+Deca", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 48rem) {
+  .block {
+    max-width: 35.25rem;
+  }
+
+  .box:first-child {
+    height: 50vh;
+  }
+
+  .box:last-child {
+    padding: 4rem 5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .block {
+    height: auto;
+    max-width: 70.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .box:first-child {
+    order: 2;
+  }
+
+  .box:last-child {
+    order: 1;
+    text-align: left;
+    letter-spacing: 0;
+  }
+}
