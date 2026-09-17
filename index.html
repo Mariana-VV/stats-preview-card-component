@@ -14,35 +14,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>stats-preview-card-component</title>
+    <title>Stats Preview Card</title>
   </head>
   <body>
-    <div class="block">
-      <div class="box"></div>
-      <div class="box">
-        <h1 class="title">
-          Get <span class="heightlight">insights</span> that help your business
-          grow.
-        </h1>
-        <p class="description">
-          Discover the benefits of data analytics and make better decisions
-          regarding revenue, customer experience, and overall efficiency.
-        </p>
-        <ul class="list">
-          <li class="item">
-            <p class="digit">10k+</p>
-            <p class="text">Companies</p>
-          </li>
-          <li class="item">
-            <p class="digit">314</p>
-            <p class="text">Templates</p>
-          </li>
-          <li class="item">
-            <p class="digit">12M</p>
-            <p class="text">Queries</p>
-          </li>
-        </ul>
+    <main>
+      <div class="block">
+        <div class="box">
+          <picture class="picture">
+            <source
+              media="(min-width:768px)"
+              srcset="images/image-header-desktop.jpg"
+            />
+            <img src="images/mob.png" alt="Business team" />
+          </picture>
+        </div>
+        <div class="box">
+          <h1 class="title">
+            Get <span class="heightlight">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <ul class="list">
+            <li class="item">
+              <span class="digit">10k+</span>
+              <span class="text">Companies</span>
+            </li>
+            <li class="item">
+              <span class="digit">314</span>
+              <span class="text">Templates</span>
+            </li>
+            <li class="item">
+              <span class="digit">12M</span>
+              <span class="text">Queries</span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
